@@ -1,0 +1,147 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  background: rgb(59,21,160);
+}
+
+.input-container {
+  max-width: 800px;
+  margin: 2.5rem auto 0 auto;
+  padding: 2rem 2.5rem;
+  min-height: 700px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(59,21,160,0.18);
+}
+
+.form-section {
+  margin-bottom: 1.5rem;
+  padding: 1.2rem 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(59,21,160,0.10);
+}
+
+.form-section h3 {
+  margin-bottom: 0.7rem;
+  color: rgb(59,21,160);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  border: 1.5px solid rgb(59,21,160);
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  color: rgb(59,21,160);
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(59,21,160,0.07);
+}
+input:focus, select:focus {
+  border: 1.5px solid rgb(73,200,255);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(73,200,255,0.15);
+}
+
+.category-select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.expense-item, .debt-item {
+  display: grid;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.expense-item {
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.debt-item {
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  padding: 0.7rem;
+  background: #f7f8fa;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(59,21,160,0.08);
+  align-items: end;
+}
+
+.debt-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: rgb(59,21,160);
+}
+
+.debt-item input[type="text"],
+.debt-item input[type="number"] {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.debt-item input[type="text"] {
+  /* Make name field same as others */
+  height: 44px;
+}
+
+.debt-item input[type="number"] {
+  height: 44px;
+}
+
+.add-button {
+  background: rgb(73,200,255);
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(73,200,255,0.15);
+}
+.add-button:hover {
+  background: rgb(59,21,160);
+  color: #fff;
+}
+
+.submit-button {
+  background: rgb(59,21,160);
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 100%;
+  font-weight: 700;
+  margin-top: 0.7rem;
+  box-shadow: 0 4px 16px rgba(59,21,160,0.18);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.submit-button:hover {
+  background: rgb(73,200,255);
+  color: #fff;
+}
+
+/* Make all labels and text outside cards white for contrast on purple bg */
+body, html, .input-page-label, .input-page-title {
+  color: #fff;
+}
+
+.input-name-label {
+  color: rgb(59,21,160) !important;
+  font-weight: 700;
+} 

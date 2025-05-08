@@ -1,5 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
 .App {
-  text-align: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .App-logo {
@@ -35,4 +65,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html, body, #root {
+  min-height: 100vh;
+  height: auto;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  background: #f7f8fa;
+}
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  height: auto;
+  background: #f7f8fa;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: auto;
+  overflow-y: visible;
 }
